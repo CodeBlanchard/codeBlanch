@@ -1,6 +1,3 @@
-Original App Design Project - README Template
-===
-
 # Code Blanch
 
 ## Table of Contents
@@ -75,7 +72,7 @@ Yelp style app designed to specifically rate the food in MHC's Blanchard Hall. I
 * Login
    * Button to go back to main
 
-## Wireframes
+### Digital Wireframes & Mockups
 
 <img src="http://g.recordit.co/A3h6yLTF7J.gif" width=600>
 gif
@@ -83,7 +80,7 @@ gif
 (![](https://i.imgur.com/kjIwC63.png)
 png
 
-### [BONUS] Digital Wireframes & Mockups
+link to our digital wireframes : https://www.figma.com/file/KVwZhJYYAejMtPUAjynuve/codeBlanch
 
 ### [BONUS] Interactive Prototype
 
