@@ -1,3 +1,6 @@
+Original App Design Project - README Template
+===
+
 # Code Blanch
 
 ## Table of Contents
@@ -73,16 +76,93 @@ Yelp style app designed to specifically rate the food in MHC's Blanchard Hall. I
    * Button to go back to main
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+
+<img src="http://g.recordit.co/A3h6yLTF7J.gif" width=600>
+gif
+
+(![](https://i.imgur.com/kjIwC63.png)
+png
 
 ### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
+Review
+| Property    | Type   | Description                         |
+| ----------- | ------ | ----------------------------------- |
+| userName    | String | name of the logged in user          |
+| reviewText  | String | the review left by the user         |
+| reviewImage | Image  | optional image uploaded by the user |
+| dateUploaded | DateTime | the date the review was uploaded |
+
+Community tab
+
+| Property     | Type   | Description                                 |
+| ------------ | ------ | ------------------------------------------- |
+| userName     | String | username of the user the uploaded the combo |
+| comboName    | String | name of the combo given by the user|
+| comboImage   | Image  | optional image uploaded by the user |
+| comboDescrip | String | Description of the combo given by the user  |
+| postType | String | The type of post |
+
+Categories
+
+| Property | Type | Description |
+| -------- | -------- | -------- |
+| classicsButton | Button | Button that takes you to classics menu |
+| grillButton | Button | Button that takes you to grill menu |
+| globalButton | Button | Button that takes you to global menu |
+| wokButton | Button | Button that takes you to wok menu |
+| hallalButton | Button | Button that takes you to hallal menu |
+| kosherButton | Button | Button that takes you to kosher menu |
+| harvestButton| Button | Button that takes you to harvest menu|
+
+Account
+
+| Property | Type | Description |
+| -------- | -------- | -------- |
+| remainingSwipes | String | A number with the amount of swipes the user has left|
+| favImage | Image | the picture of your favorited foods |
+| savedFoods | String | the name of food you have saved |
+| ratedFood | String | the name of foods you have rated |
+
+Login screen
+
+| Property | Type | Description |
+| -------- | -------- | -------- |
+| username | textField | Text field to enter the username |
+| password |textField | Text field to enter a password |
+| loginButton | Button | Button to login |
+| registerButton | Button | Button to register |
+
+Item
+
+| Property | Type | Description |
+| -------- | ---- | ----------- |
+| foodLabel | String | Name of the food |
+| ingredientLabel | String | Ingredients in the food |
+| addReview | Button | Button that takes you to review page |
+| saveFood | Button | Button to save the food |
+
+Main Screen
+
+| Property | Type | Description |
+| -------- | -------- | -------- |
+| loginPageButton | Button | Button that takes the user to the login/register page |
+| viewMenuButton | Button | Button that takes the user to the menu |
+
+
 ### Models
 [Add table of models]
 ### Networking
-- Request API to mtholyoke dining hall
+* Request API to mtholyoke dining hall
+* Profile Screen
+    * (Read/GET) Ask user to log in 
+* Main Menu Screen
+    * (Read/GET) Query all posts where a review and rating
+* Make a review Screen
+    * (Create/POST) Create a new post object
+    * (Create/POST) Create a new image post
+* Settings
+    * (Read/GET) Get what specific restrictions the user wants
