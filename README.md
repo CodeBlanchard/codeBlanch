@@ -46,6 +46,12 @@ Yelp style app designed to specifically rate the food in MHC's Blanchard Hall. I
 * User can choose to leave an anonymous review
 * User can add filters based on dietary restrictions
 
+**Progress Gif**
+
+
+<img src="http://g.recordit.co/jOM2cqtOrt.gif" width=300>
+
+
 ### 2. Screen Archetypes
 
 * Launch Screen
@@ -81,7 +87,7 @@ Yelp style app designed to specifically rate the food in MHC's Blanchard Hall. I
 
 ### Digital Wireframes & Mockups
 
-<img src="http://g.recordit.co/A3h6yLTF7J.gif" width=600>
+<img src="http://g.recordit.co/A3h6yLTF7J.gif" width= 600>
 gif
 
 (![](https://i.imgur.com/kjIwC63.png)
