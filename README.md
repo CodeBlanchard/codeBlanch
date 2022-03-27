@@ -25,12 +25,19 @@ Yelp style app designed to specifically rate the food in MHC's Blanchard Hall. I
 
 **Required Must-have Stories**
 
-* User can view launch screen
-* User can leave a ratings and review of their food
-* User can view other people's reviews without logging in
-* User can login to leave a review (with mtholyoke account)
-* User can logout
-* ...
+* Sharon's Part
+* [x] User can view launch screen
+* [ ] User can log in/ logout 
+* [ ] User can sign up (with mtholyoke account)
+    
+* Carlin's Part
+    * (User can leave a ratings and review of their food)
+    * User can upload pictures of their food
+    * User can add their favorite food combinations
+    
+* Ines's Part
+    * User can view other people's reviews without logging in
+    * User can view today's menu 
 
 **Optional Nice-to-have Stories**
 
