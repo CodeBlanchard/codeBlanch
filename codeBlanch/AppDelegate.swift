@@ -1,13 +1,14 @@
 //
 //  AppDelegate.swift
-//  codeBlanch
+//  CodeBlanch
 //
-//  Created by Lucy Rosen on 3/20/22.
+//  Created by Ines Belkhodja on 3/26/22.
+//  Copyright © 2022 Ines Belkhodja. All rights reserved.
 //
 
 import UIKit
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
