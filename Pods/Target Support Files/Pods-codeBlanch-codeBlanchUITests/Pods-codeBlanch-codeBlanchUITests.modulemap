@@ -1,0 +1,6 @@
+framework module Pods_codeBlanch_codeBlanchUITests {
+  umbrella header "Pods-codeBlanch-codeBlanchUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
