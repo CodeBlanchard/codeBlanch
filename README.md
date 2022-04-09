@@ -27,8 +27,9 @@ Yelp style app designed to specifically rate the food in MHC's Blanchard Hall. I
 
 * Sharon's Part
 * [x] User can view launch screen
-* [ ] User can log in/ logout 
-* [ ] User can sign up (with mtholyoke account)
+* [x] User can log in/ logout 
+* [x] User can sign up (with mtholyoke account)
+* [x] User can set their account on Setting's page
     
 * Carlin's Part
     * (User can leave a ratings and review of their food)
@@ -47,8 +48,9 @@ Yelp style app designed to specifically rate the food in MHC's Blanchard Hall. I
 * User can add filters based on dietary restrictions
 
 **Progress Gif**
-
-
+## Week 3
+<img src="http://g.recordit.co/3wLdMclSpw.gif" width=300>
+## Week 1
 <img src="http://g.recordit.co/jOM2cqtOrt.gif" width=300>
 
 
