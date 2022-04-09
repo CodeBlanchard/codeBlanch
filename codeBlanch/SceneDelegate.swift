@@ -19,11 +19,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         
-//        if PFUser.current() != nil {
-//            let main = UIStoryboard(name: "Main", bundle: nil)
-//            let feedNavigationController = main.instantiateViewController(identifier: "CategoryViewController")
-//            window?.rootViewController = CategoryViewController
-//        }
+        if PFUser.current() != nil {
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            let tabBar = main.instantiateViewController(identifier: "tabBar")
+            window?.rootViewController = tabBar
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
