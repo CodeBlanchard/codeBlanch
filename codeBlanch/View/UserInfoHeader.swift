@@ -2,7 +2,7 @@
 //  UserInfoHeader.swift
 //  SettingsTemplate
 //
-//  Created by Stephen Dowless on 2/10/19.
+//  Created by Sharon Kang on 2/10/19.
 //  Copyright © 2019 Stephan Dowless. All rights reserved.
 //
 
@@ -17,13 +17,13 @@ class UserInfoHeader: UIView {
         iv.contentMode = .scaleAspectFill
         iv.clipsToBounds = true
         iv.translatesAutoresizingMaskIntoConstraints = false
-        iv.image = UIImage(named: "ironman")
+        iv.image = UIImage(named: "mycat")
         return iv
     }()
     
     let usernameLabel: UILabel = {
         let label = UILabel()
-        label.text = "Tony Stark"
+        label.text = "Mary Lyon"
         label.font = UIFont.systemFont(ofSize: 16)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -31,7 +31,7 @@ class UserInfoHeader: UIView {
     
     let emailLabel: UILabel = {
         let label = UILabel()
-        label.text = "tony.stark@gmail.com"
+        label.text = "marylyon@mtholyoke.edu"
         label.font = UIFont.systemFont(ofSize: 14)
         label.textColor = .lightGray
         label.translatesAutoresizingMaskIntoConstraints = false

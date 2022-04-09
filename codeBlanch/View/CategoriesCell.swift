@@ -2,7 +2,7 @@
 //  CategoriesCell.swift
 //  codeBlanch
 //
-//  Created by 조은이꺼 on 4/3/22.
+//  Created by Sharon Kang on 4/3/22.
 //
 
 import UIKit
