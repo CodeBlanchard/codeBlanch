@@ -9,6 +9,7 @@ target 'codeBlanch' do
 pod 'AlamofireImage'
 pod 'Parse'
 
+
   target 'codeBlanchTests' do
     inherit! :search_paths
     # Pods for testing
