@@ -7,11 +7,17 @@
 //
 
 import UIKit
+import Parse
 
 class CategoriesCell: UITableViewCell {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var posterView: UIImageView!
+    
+    
+    @IBAction func nextButton(_ sender: Any) {
+        
+    }
     
     
     override func awakeFromNib() {
