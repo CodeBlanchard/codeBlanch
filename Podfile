@@ -6,9 +6,9 @@ target 'codeBlanch' do
   use_frameworks!
 
   # Pods for codeBlanch
-pod 'AlamofireImage'
 pod 'Parse'
-
+pod 'Cosmos'
+pod 'TinyConstraints'
 
   target 'codeBlanchTests' do
     inherit! :search_paths
