@@ -1,18 +1,25 @@
 //
 //  CategoriesCell.swift
-//  codeBlanch
+//  CodeBlanch
 //
-//  Created by Sharon Kang on 4/3/22.
+//  Created by sulagna on 4/2/22.
+//  Copyright © 2022 Ines Belkhodja. All rights reserved.
 //
 
 import UIKit
+import Parse
 
 class CategoriesCell: UITableViewCell {
-    
-    
+
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var posterView: UIImageView!
-
+    
+    
+    @IBAction func nextButton(_ sender: Any) {
+        
+    }
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

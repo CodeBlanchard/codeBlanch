@@ -1,36 +1,37 @@
 //
 //  CategoriesViewController.swift
-//  codeBlanch
+//  CodeBlanch
 //
-//  Created by 조은이꺼 on 4/3/22.
+//  Created by sulagna on 4/2/22.
+//  Copyright © 2022 Ines Belkhodja. All rights reserved.
 //
 
 import UIKit
 
-class CategoriesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class CategoriesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-           return 10
-       }
-       
-       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-           
-           
-           let cell = tableView.dequeueReusableCell(withIdentifier: "CategoriesCell") as! CategoriesCell
-           
-           let title = "Classics"
-           cell.nameLabel.text = title
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-           
-           
-           
-           return cell
-       }
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CategoriesCell") as! CategoriesCell
+        
+        let title = "Classics"
+        cell.nameLabel.text = title
+     
+        
+        
+        
+        return cell
+    }
 
-       @IBOutlet weak var tableView: UITableView!
-
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.dataSource = self
         tableView.delegate = self
 
