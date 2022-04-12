@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i7K-sc-HnU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--comboRec-->
+        <scene sceneID="iZh-rn-utS">
+            <objects>
+                <viewController storyboardIdentifier="comboRec" title="comboRec" useStoryboardIdentifierAsRestorationIdentifier="YES" id="i7K-sc-HnU" customClass="ComboViewController" customModule="codeBlanch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="comboRec" id="T0t-iJ-8ly">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Combination name (optional)" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zih-zH-Ilc">
+                                <rect key="frame" x="16" y="99" width="382" height="39"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="LXs-9V-OWP"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Items in combo" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Idk-zK-tKr">
+                                <rect key="frame" x="16" y="154" width="382" height="514"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="514" id="NPX-nq-wR9"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Vc-Eg-maf">
+                                <rect key="frame" x="16" y="60" width="68.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
+                                <connections>
+                                    <action selector="onCancelBtn:" destination="i7K-sc-HnU" eventType="touchUpInside" id="STk-gc-LzG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmT-pc-xBG">
+                                <rect key="frame" x="328" y="60" width="70" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Submit"/>
+                                <connections>
+                                    <action selector="onSubmitBtn:" destination="i7K-sc-HnU" eventType="touchUpInside" id="O2G-K3-uAP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sH7-r7-fPD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sH7-r7-fPD" firstAttribute="trailing" secondItem="Idk-zK-tKr" secondAttribute="trailing" constant="16" id="KnJ-U8-D0u"/>
+                            <constraint firstItem="Idk-zK-tKr" firstAttribute="top" secondItem="zih-zH-Ilc" secondAttribute="bottom" constant="16" id="V81-ww-PXx"/>
+                            <constraint firstItem="BmT-pc-xBG" firstAttribute="top" secondItem="sH7-r7-fPD" secondAttribute="top" constant="16" id="XTI-I6-Yc1"/>
+                            <constraint firstItem="sH7-r7-fPD" firstAttribute="trailing" secondItem="zih-zH-Ilc" secondAttribute="trailing" constant="16" id="a7Z-du-BRC"/>
+                            <constraint firstItem="2Vc-Eg-maf" firstAttribute="leading" secondItem="sH7-r7-fPD" secondAttribute="leading" constant="16" id="ixC-B4-gUN"/>
+                            <constraint firstItem="Idk-zK-tKr" firstAttribute="leading" secondItem="sH7-r7-fPD" secondAttribute="leading" constant="16" id="pxE-h5-6wp"/>
+                            <constraint firstItem="2Vc-Eg-maf" firstAttribute="top" secondItem="sH7-r7-fPD" secondAttribute="top" constant="16" id="tFI-3f-33E"/>
+                            <constraint firstItem="sH7-r7-fPD" firstAttribute="trailing" secondItem="BmT-pc-xBG" secondAttribute="trailing" constant="16" id="u9y-HF-QIy"/>
+                            <constraint firstItem="zih-zH-Ilc" firstAttribute="leading" secondItem="sH7-r7-fPD" secondAttribute="leading" constant="16" id="ygY-0w-yDq"/>
+                            <constraint firstItem="zih-zH-Ilc" firstAttribute="top" secondItem="2Vc-Eg-maf" secondAttribute="bottom" constant="8" id="yo9-43-zew"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descripTextView" destination="Idk-zK-tKr" id="boa-UA-w73"/>
+                        <outlet property="titleTextView" destination="zih-zH-Ilc" id="CZP-4S-4Il"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dvp-NM-qcQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="63.616071428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

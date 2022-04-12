@@ -1,0 +1,30 @@
+PODS:
+  - Bolts/Tasks (1.9.1)
+  - Cosmos (23.0.0)
+  - Parse (1.19.3):
+    - Parse/Core (= 1.19.3)
+  - Parse/Core (1.19.3):
+    - Bolts/Tasks (= 1.9.1)
+  - TinyConstraints (4.0.2)
+
+DEPENDENCIES:
+  - Cosmos
+  - Parse
+  - TinyConstraints
+
+SPEC REPOS:
+  trunk:
+    - Bolts
+    - Cosmos
+    - Parse
+    - TinyConstraints
+
+SPEC CHECKSUMS:
+  Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  Parse: 0abb63a0ff6fa34a3f64b81d595a294e2ece143a
+  TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
+
+PODFILE CHECKSUM: a86397ba51f054376c87db0d0499d7373e97c318
+
+COCOAPODS: 1.11.2

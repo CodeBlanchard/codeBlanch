@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RMp-zY-wY0">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--leaveReview-->
+        <scene sceneID="6aV-YZ-uBB">
+            <objects>
+                <viewController storyboardIdentifier="leaveReview" title="leaveReview" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RMp-zY-wY0" customClass="reviewViewController" customModule="codeBlanch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ASo-61-3AY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Write a review..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7ON-Li-48h">
+                                <rect key="frame" x="16" y="159" width="382" height="290"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="290" id="XsP-uJ-weR"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Name of food item" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="H06-SW-gYM">
+                                <rect key="frame" x="16" y="107" width="382" height="36"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Nfj-lK-92C"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ZW-EN-1xS">
+                                <rect key="frame" x="328" y="60" width="70" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Submit"/>
+                                <connections>
+                                    <action selector="onSubmitBtn:" destination="RMp-zY-wY0" eventType="touchUpInside" id="Yio-97-NTW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDO-0O-blf">
+                                <rect key="frame" x="16" y="60" width="69" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
+                                <connections>
+                                    <action selector="onCancelBtn:" destination="RMp-zY-wY0" eventType="touchUpInside" id="nLh-sc-KVC"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m26-cu-oKB" customClass="RatingView" customModule="Cosmos">
+                                <rect key="frame" x="87" y="635" width="240" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YwC-CA-m78"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YwC-CA-m78" firstAttribute="trailing" secondItem="7ON-Li-48h" secondAttribute="trailing" constant="16" id="5Zu-lt-C5U"/>
+                            <constraint firstItem="4ZW-EN-1xS" firstAttribute="top" secondItem="YwC-CA-m78" secondAttribute="top" constant="16" id="Ail-ei-9Kp"/>
+                            <constraint firstItem="H06-SW-gYM" firstAttribute="top" secondItem="4ZW-EN-1xS" secondAttribute="bottom" constant="16" id="Eqx-dG-pS7"/>
+                            <constraint firstItem="DDO-0O-blf" firstAttribute="leading" secondItem="YwC-CA-m78" secondAttribute="leading" constant="16" id="QJH-ak-qag"/>
+                            <constraint firstItem="H06-SW-gYM" firstAttribute="leading" secondItem="YwC-CA-m78" secondAttribute="leading" constant="16" id="WmT-yE-u6i"/>
+                            <constraint firstItem="YwC-CA-m78" firstAttribute="trailing" secondItem="4ZW-EN-1xS" secondAttribute="trailing" constant="16" id="Yte-wF-14i"/>
+                            <constraint firstItem="YwC-CA-m78" firstAttribute="trailing" secondItem="H06-SW-gYM" secondAttribute="trailing" constant="16" id="Z3X-8J-lRU"/>
+                            <constraint firstItem="7ON-Li-48h" firstAttribute="top" secondItem="H06-SW-gYM" secondAttribute="bottom" constant="16" id="ag3-FW-GFj"/>
+                            <constraint firstItem="DDO-0O-blf" firstAttribute="top" secondItem="YwC-CA-m78" secondAttribute="top" constant="16" id="cfB-DS-lYq"/>
+                            <constraint firstItem="7ON-Li-48h" firstAttribute="leading" secondItem="YwC-CA-m78" secondAttribute="leading" constant="16" id="rdO-LB-pTa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="reviewTextView" destination="7ON-Li-48h" id="wXQ-Xo-cIb"/>
+                        <outlet property="titleTextView" destination="H06-SW-gYM" id="Tg5-RW-0J3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rLj-jH-nC2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2749.275362318841" y="82.366071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
