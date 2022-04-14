@@ -32,8 +32,9 @@ Yelp style app designed to specifically rate the food in MHC's Blanchard Hall. I
 * [x] User can set their account on Setting's page
     
 * Carlin's Part
-* [x] User can leave a ratings and review of their food
+* [x] User can leave ratings and reviews of their food
 * [x] User can add their favorite food combinations
+* [x] User can view other people's reviews/food combinations
     
 * Ines's Part
     * User can view other people's reviews without logging in
