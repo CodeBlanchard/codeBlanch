@@ -8,25 +8,32 @@
 import UIKit
 import Parse
 
-class communityViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+public class communityViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    let rateLabel = UILabel()
     
     var posts = [PFObject]()
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        //let comboVC = ComboViewController()
+//        if (AppDelegate.appDelegate().comboVC.descripTextView.text != "Items in combo"){
+//            //rateLabel.frame = CGRect(x: 16, y: 16, width: 100, height: 50)
+//            rateLabel.text = "It worked!"
+//        }
 
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override public func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         let query = PFQuery(className: "Posts")
-        query.includeKey("Author")
+        query.includeKeys(["Author", "Review", "Food", "Rating"])
         query.limit = 20
         
         query.findObjectsInBackground { (posts, error) in
@@ -37,21 +44,36 @@ class communityViewController: UIViewController, UITableViewDelegate, UITableVie
         }
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
         
         let post = posts[indexPath.row]
+        
+        
+//        if (post["Review"] as! String != "Write a review..."){
+//            print ("It worked!")
+//        }
         
         let user = post["Author"] as! PFUser
         cell.usernameLabel.text = user.username
         cell.contentLabel.text = post["Review"] as! String
         
+        if post["Rating"] != nil{
+        let food = post["Food"] as! String
+        let rating = post["Rating"] as! NSNumber
+        cell.descripLabel.text = "left a \(rating) star rating on \(food)"
+        } else{
+            cell.descripLabel.text = "recommended a combination"
+        }
+        //cell.descripLabel.text = "left a \(rating) star review on \(food)"
+        
         return cell
     }
+    
     
     @IBAction func addBtn(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -64,7 +86,9 @@ class communityViewController: UIViewController, UITableViewDelegate, UITableVie
                self.present(viewController, animated: true)
     }
     
-    
+//    public func didTouchCosmos(_ rating: Double) {
+//            rateLabel.text = "\(reviewViewController.formatValue(rating))"
+//        }
     
 
     /*

@@ -16,18 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Combination name (optional)" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zih-zH-Ilc">
-                                <rect key="frame" x="16" y="99" width="382" height="39"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="LXs-9V-OWP"/>
-                                </constraints>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Items in combo" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Idk-zK-tKr">
-                                <rect key="frame" x="16" y="154" width="382" height="514"/>
+                                <rect key="frame" x="16" y="107" width="382" height="514"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="514" id="NPX-nq-wR9"/>
@@ -52,25 +42,31 @@
                                     <action selector="onSubmitBtn:" destination="i7K-sc-HnU" eventType="touchUpInside" id="O2G-K3-uAP"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Combo Recommendation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIW-qs-geO">
+                                <rect key="frame" x="110" y="60" width="194" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sH7-r7-fPD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Idk-zK-tKr" firstAttribute="top" secondItem="2Vc-Eg-maf" secondAttribute="bottom" constant="16" id="80h-WI-MdN"/>
+                            <constraint firstItem="DIW-qs-geO" firstAttribute="leading" secondItem="2Vc-Eg-maf" secondAttribute="trailing" constant="25.5" id="Fyo-nH-R3W"/>
                             <constraint firstItem="sH7-r7-fPD" firstAttribute="trailing" secondItem="Idk-zK-tKr" secondAttribute="trailing" constant="16" id="KnJ-U8-D0u"/>
-                            <constraint firstItem="Idk-zK-tKr" firstAttribute="top" secondItem="zih-zH-Ilc" secondAttribute="bottom" constant="16" id="V81-ww-PXx"/>
+                            <constraint firstItem="DIW-qs-geO" firstAttribute="top" secondItem="sH7-r7-fPD" secondAttribute="top" constant="16" id="N87-MD-gFe"/>
+                            <constraint firstItem="BmT-pc-xBG" firstAttribute="leading" secondItem="DIW-qs-geO" secondAttribute="trailing" constant="24" id="VDc-FM-lyJ"/>
                             <constraint firstItem="BmT-pc-xBG" firstAttribute="top" secondItem="sH7-r7-fPD" secondAttribute="top" constant="16" id="XTI-I6-Yc1"/>
-                            <constraint firstItem="sH7-r7-fPD" firstAttribute="trailing" secondItem="zih-zH-Ilc" secondAttribute="trailing" constant="16" id="a7Z-du-BRC"/>
+                            <constraint firstItem="Idk-zK-tKr" firstAttribute="top" secondItem="DIW-qs-geO" secondAttribute="bottom" constant="16" id="bFK-ok-RjU"/>
                             <constraint firstItem="2Vc-Eg-maf" firstAttribute="leading" secondItem="sH7-r7-fPD" secondAttribute="leading" constant="16" id="ixC-B4-gUN"/>
                             <constraint firstItem="Idk-zK-tKr" firstAttribute="leading" secondItem="sH7-r7-fPD" secondAttribute="leading" constant="16" id="pxE-h5-6wp"/>
                             <constraint firstItem="2Vc-Eg-maf" firstAttribute="top" secondItem="sH7-r7-fPD" secondAttribute="top" constant="16" id="tFI-3f-33E"/>
                             <constraint firstItem="sH7-r7-fPD" firstAttribute="trailing" secondItem="BmT-pc-xBG" secondAttribute="trailing" constant="16" id="u9y-HF-QIy"/>
-                            <constraint firstItem="zih-zH-Ilc" firstAttribute="leading" secondItem="sH7-r7-fPD" secondAttribute="leading" constant="16" id="ygY-0w-yDq"/>
-                            <constraint firstItem="zih-zH-Ilc" firstAttribute="top" secondItem="2Vc-Eg-maf" secondAttribute="bottom" constant="8" id="yo9-43-zew"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="descripTextView" destination="Idk-zK-tKr" id="boa-UA-w73"/>
-                        <outlet property="titleTextView" destination="zih-zH-Ilc" id="CZP-4S-4Il"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dvp-NM-qcQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

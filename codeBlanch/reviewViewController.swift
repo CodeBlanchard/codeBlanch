@@ -10,10 +10,12 @@ import Parse
 import Cosmos
 import TinyConstraints
 
-class reviewViewController: UIViewController {
+public class reviewViewController: UIViewController {
     
     @IBOutlet weak var titleTextView: UITextView!
     @IBOutlet weak var reviewTextView: UITextView!
+    
+    let post = PFObject(className: "Posts")
     
     lazy var cosmosView: CosmosView = {
         var view = CosmosView()
@@ -26,23 +28,26 @@ class reviewViewController: UIViewController {
     } ()
     
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         
         view.addSubview(cosmosView)
         cosmosView.centerInSuperview()
 
         cosmosView.didTouchCosmos = { rating in
+            //self.post["Rating"] = rating
         }
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func onSubmitBtn(_ sender: Any) {
-        let post = PFObject(className: "Posts")
+        //let post = PFObject(className: "Posts")
 
         post["Food"] = titleTextView.text!
         post["Review"] = reviewTextView.text!
         post["Author"] = PFUser.current()!
+        cosmosView.didTouchCosmos = { rating in
+            self.post["Rating"] = rating
+        }
 
         post.saveInBackground { (success, error) in
             if success{
@@ -56,6 +61,11 @@ class reviewViewController: UIViewController {
     
     @IBAction func onCancelBtn(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    public class func formatValue(_ value: Double) -> Int {
+            print(Int(value))
+            return Int(value)
     }
     
     /*

@@ -52,7 +52,7 @@
                                     <action selector="onCancelBtn:" destination="RMp-zY-wY0" eventType="touchUpInside" id="nLh-sc-KVC"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m26-cu-oKB" customClass="RatingView" customModule="Cosmos">
+                            <view contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="ratingView" translatesAutoresizingMaskIntoConstraints="NO" id="m26-cu-oKB" customClass="RatingView" customModule="Cosmos">
                                 <rect key="frame" x="87" y="635" width="240" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
