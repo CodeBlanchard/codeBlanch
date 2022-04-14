@@ -10,8 +10,10 @@ import UIKit
 class CategoriesCell: UITableViewCell {
     
     
-    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var posterView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,5 +25,5 @@ class CategoriesCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }
+

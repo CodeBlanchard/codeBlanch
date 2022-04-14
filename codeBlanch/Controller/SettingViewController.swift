@@ -113,10 +113,10 @@ class SettingViewController: UIViewController, UITableViewDelegate, UITableViewD
             if (SocialOptions(rawValue: indexPath.row)?.description == "Log Out") {
                 PFUser.logOut()
                 let main = UIStoryboard(name: "Main", bundle: nil)
-                let loginViewController = main.instantiateViewController(identifier: "LoginViewController")
+                let initialScreen = main.instantiateViewController(identifier: "initialScreen")
                 guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let delegate = windowScene.delegate as? SceneDelegate else {return}
 
-                delegate.window?.rootViewController = loginViewController
+                delegate.window?.rootViewController = initialScreen
             } else {
                 print(SocialOptions(rawValue : indexPath.row)?.description)
             }
