@@ -8,14 +8,14 @@
 
 ## Overview
 ### Description
-Yelp style app designed to specifically rate the food in MHC's Blanchard Hall. It would show the ratings for the food available on a certain day. 
+Yelp style app designed to specifically rate the food in MHC's Blanchard Hall. It would show the ratings for the food available on a certain day.
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category:** Social / Food ratings 
-- **Mobile:** This app is limited to only mobiles due to the convenience of uploading pictures. 
+- **Category:** Social / Food ratings
+- **Mobile:** This app is limited to only mobiles due to the convenience of uploading pictures.
 - **Story:** Analyzes daily meals at the dining hall and then would give a rating out of 5 stars. Students at MHC would have the ability to upload their food combinations and their specific ratings, as this app is collaborative.
-- **Market:** The market would primarily be Mount Holyoke students, although Mount Holyoke faculty and staff might also find it useful. 
+- **Market:** The market would primarily be Mount Holyoke students, although Mount Holyoke faculty and staff might also find it useful.
 - **Habit:** The average user would use the app 1-4 times a day. The user has the opportunity to solely use the app or to publish reviews and add pictures of the food.
 - **Scope:** The app would not be particularly challenging to build. This app gives us the freedom to only include the food in Blanchard Hall, or to expand the structure to all of the Five Colleges.
 
@@ -27,18 +27,18 @@ Yelp style app designed to specifically rate the food in MHC's Blanchard Hall. I
 
 * Sharon's Part
 * [x] User can view launch screen
-* [x] User can log in/ logout 
+* [x] User can log in/ logout
 * [x] User can sign up (with mtholyoke account)
 * [x] User can set their account on Setting's page
-    
+
 * Carlin's Part
 * [x] User can leave ratings and reviews of their food
 * [x] User can add their favorite food combinations
 * [x] User can view other people's reviews/food combinations
-    
+
 * Ines's Part
-    * User can view other people's reviews without logging in
-    * User can view today's menu 
+* [x] User can view other people's reviews without logging in
+* [x] User can view today's menu
 
 **Optional Nice-to-have Stories**
 
@@ -64,7 +64,7 @@ Yelp style app designed to specifically rate the food in MHC's Blanchard Hall. I
    * Button to allow user to add a review
    * User can add filters based on dietary restrictions
 * Login Screen
-* Review Screen 
+* Review Screen
     * User can write a review/rate foods
     * User can upload a picture of their food
 * Settings Screen
@@ -75,12 +75,12 @@ Yelp style app designed to specifically rate the food in MHC's Blanchard Hall. I
 **Tab Navigation** (Tab to Screen)
 * First Tab - Search Menu and Find ratings (Twitter)
 * Main(Second) Tab -  Daily Menu with Rating (Yelp)
-* Third Tab - Settings/ Profile Page 
+* Third Tab - Settings/ Profile Page
 
 **Flow Navigation** (Screen to Screen)
 
 * Main Menu
-   * Button to Log in 
+   * Button to Log in
    * Button to add a review
 * Add a review
    * Button to go back to main
@@ -99,7 +99,7 @@ link to our digital wireframes : https://www.figma.com/file/KVwZhJYYAejMtPUAjynu
 
 ### [BONUS] Interactive Prototype
 
-## Schema 
+## Schema
 Review
 | Property    | Type   | Description                         |
 | ----------- | ------ | ----------------------------------- |
@@ -170,7 +170,7 @@ Main Screen
 ### Networking
 * Request API to mtholyoke dining hall
 * Profile Screen
-    * (Read/GET) Ask user to log in 
+    * (Read/GET) Ask user to log in
 * Main Menu Screen
     * (Read/GET) Query all posts where a review and rating
 * Make a review Screen
