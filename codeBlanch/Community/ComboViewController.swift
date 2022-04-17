@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftUI
+import Parse
 
 class ComboViewController: UIViewController {
     
@@ -24,6 +25,19 @@ class ComboViewController: UIViewController {
     }
     
     @IBAction func onSubmitBtn(_ sender: Any) {
+        let post = PFObject(className: "Posts")
+
+        post["Review"] = descripTextView.text!
+        post["Author"] = PFUser.current()!
+
+        post.saveInBackground { (success, error) in
+            if success{
+                self.dismiss(animated: true, completion: nil)
+                print ("Saved!")
+            }else{
+                print("error")
+            }
+        }
     }
     
     

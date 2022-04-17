@@ -7,10 +7,12 @@
 
 import UIKit
 import Parse
+import Kingfisher
 
 class communityViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    let rateLabel = UILabel()
     
     var posts = [PFObject]()
     
@@ -26,7 +28,7 @@ class communityViewController: UIViewController, UITableViewDelegate, UITableVie
         super.viewDidAppear(animated)
         
         let query = PFQuery(className: "Posts")
-        query.includeKey("Author")
+        query.includeKeys(["Author", "Review", "Food", "Rating"])
         query.limit = 20
         
         query.findObjectsInBackground { (posts, error) in
@@ -46,10 +48,25 @@ class communityViewController: UIViewController, UITableViewDelegate, UITableVie
         
         let post = posts[indexPath.row]
         
+        
         let user = post["Author"] as! PFUser
+        let profilePath = post["profileImage"] as! String
+        let profileURL = URL(string: profilePath)
+        
         cell.usernameLabel.text = user.username
+        cell.profilePicture.kf.setImage(with: profileURL!)
+        cell.profilePicture.layer.cornerRadius = 10.0
+        
         cell.contentLabel.text = post["Review"] as! String
         
+        if post["Rating"] != nil{
+            let food = post["Food"] as! String
+            let rating = post["Rating"] as! NSNumber
+            cell.descripLabel.text = "left a \(rating) star rating on \(food)"
+        } else{
+            cell.descripLabel.text = "recommended a combination"
+        }
+    
         return cell
     }
     

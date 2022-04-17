@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0245E95D28023E6500A9FF0D /* mycat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0245E95C28023E6500A9FF0D /* mycat.jpg */; };
+		028CA201280C6D2D0023D987 /* Heart_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 028CA200280C6D2C0023D987 /* Heart_icon.png */; };
+		028CA203280C6D330023D987 /* heart_icon_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 028CA202280C6D330023D987 /* heart_icon_selected.png */; };
 		029375F327EF998500217020 /* KakaoTalk_20220318_151734644.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 029375F227EF998400217020 /* KakaoTalk_20220318_151734644.jpg */; };
 		029375F727F7972800217020 /* myLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 029375F627F7972800217020 /* myLogo.png */; };
 		029375F927F7999B00217020 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029375F827F7999B00217020 /* LoginViewController.swift */; };
@@ -23,6 +25,7 @@
 		02F78BFD280A624A00179AB7 /* Vector.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F78BFC280A624A00179AB7 /* Vector.png */; };
 		02F78C02280A6A5900179AB7 /* ClassicsGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F78C01280A6A5900179AB7 /* ClassicsGridCell.swift */; };
 		02F78C04280B2AD500179AB7 /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F78C03280B2AD400179AB7 /* Extention.swift */; };
+		02F78C07280BCFAB00179AB7 /* chicken.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 02F78C06280BCFAA00179AB7 /* chicken.jpeg */; };
 		08999EE51673AAA0B97A4755 /* Pods_codeBlanch_codeBlanchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C78566B612B4180935B0BD /* Pods_codeBlanch_codeBlanchUITests.framework */; };
 		2917572E27E7D8A000FE96E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2917572D27E7D8A000FE96E4 /* AppDelegate.swift */; };
 		2917573027E7D8A000FE96E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2917572F27E7D8A000FE96E4 /* SceneDelegate.swift */; };
@@ -63,6 +66,8 @@
 
 /* Begin PBXFileReference section */
 		0245E95C28023E6500A9FF0D /* mycat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mycat.jpg; sourceTree = "<group>"; };
+		028CA200280C6D2C0023D987 /* Heart_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Heart_icon.png; sourceTree = "<group>"; };
+		028CA202280C6D330023D987 /* heart_icon_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart_icon_selected.png; sourceTree = "<group>"; };
 		029375F227EF998400217020 /* KakaoTalk_20220318_151734644.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = KakaoTalk_20220318_151734644.jpg; path = Assets.xcassets/KakaoTalk_20220318_151734644.jpg; sourceTree = "<group>"; };
 		029375F627F7972800217020 /* myLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myLogo.png; sourceTree = "<group>"; };
 		029375F827F7999B00217020 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +83,7 @@
 		02F78BFC280A624A00179AB7 /* Vector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vector.png; sourceTree = "<group>"; };
 		02F78C01280A6A5900179AB7 /* ClassicsGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicsGridCell.swift; sourceTree = "<group>"; };
 		02F78C03280B2AD400179AB7 /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
+		02F78C06280BCFAA00179AB7 /* chicken.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = chicken.jpeg; path = codeBlanch/chicken.jpeg; sourceTree = SOURCE_ROOT; };
 		1679A229DA208E92AB5C4FF4 /* Pods-codeBlanchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codeBlanchTests.release.xcconfig"; path = "Target Support Files/Pods-codeBlanchTests/Pods-codeBlanchTests.release.xcconfig"; sourceTree = "<group>"; };
 		2917572A27E7D8A000FE96E4 /* codeBlanch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = codeBlanch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2917572D27E7D8A000FE96E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -254,6 +260,9 @@
 				029375F627F7972800217020 /* myLogo.png */,
 				02F78BE42809D0E900179AB7 /* classics.png */,
 				029375F227EF998400217020 /* KakaoTalk_20220318_151734644.jpg */,
+				028CA202280C6D330023D987 /* heart_icon_selected.png */,
+				028CA200280C6D2C0023D987 /* Heart_icon.png */,
+				02F78C06280BCFAA00179AB7 /* chicken.jpeg */,
 				2917573B27E7D8AD00FE96E4 /* Info.plist */,
 			);
 			path = codeBlanch;
@@ -386,13 +395,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				029375F727F7972800217020 /* myLogo.png in Resources */,
+				028CA201280C6D2D0023D987 /* Heart_icon.png in Resources */,
 				029375F327EF998500217020 /* KakaoTalk_20220318_151734644.jpg in Resources */,
 				2917573A27E7D8AD00FE96E4 /* LaunchScreen.storyboard in Resources */,
 				0245E95D28023E6500A9FF0D /* mycat.jpg in Resources */,
 				29E6F7172804F5FF003C84E2 /* comboRec.storyboard in Resources */,
 				02F78BE52809D0E900179AB7 /* classics.png in Resources */,
 				29E6F7152804F5AF003C84E2 /* leaveReview.storyboard in Resources */,
+				02F78C07280BCFAB00179AB7 /* chicken.jpeg in Resources */,
 				02F78BFD280A624A00179AB7 /* Vector.png in Resources */,
+				028CA203280C6D330023D987 /* heart_icon_selected.png in Resources */,
 				2917573727E7D8AD00FE96E4 /* Assets.xcassets in Resources */,
 				2917573527E7D8A000FE96E4 /* Main.storyboard in Resources */,
 			);

@@ -17,9 +17,24 @@ class DishViewController: UIViewController {
         UIApplication.shared.open(URL(string: "https://menu.mtholyoke.edu/label.aspx?sName=Mount+Holyoke+College+Dining+Services&locationNum=40&locationName=Classics&naFlag=1&WeeksMenus=This+Week%27s+Menus&RecNumAndPort=111838*4")! as URL, options: [:], completionHandler: nil)
     }
     @IBOutlet weak var infoBtn: UIButton!
+    
+//    var isCouponFav = UserDefaults.standard.bool(forKey: "isCouponFav")
+    
     @IBOutlet weak var saveBtn: UIButton!
     
     @IBAction func saveDish(_ sender: Any) {
+//        if isCouponFav {
+//                let image = UIImage(named: "Heart_icon.png")
+//            (sender as AnyObject).setImage(image, for: .normal)
+//            } else {
+//                let image = UIImage(named: "heart_icon_selected.png")
+//                (sender as AnyObject).setImage(image, for: .normal)
+//            }
+//
+//            isCouponFav = !isCouponFav
+//            UserDefaults.standard.set(isCouponFav, forKey: "isCouponFav")
+//            UserDefaults.standard.synchronize()
+        
     }
     
     
