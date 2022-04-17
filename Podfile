@@ -9,6 +9,7 @@ target 'codeBlanch' do
 pod 'Parse'
 pod 'Cosmos'
 pod 'TinyConstraints'
+pod 'Kingfisher'
 
   target 'codeBlanchTests' do
     inherit! :search_paths

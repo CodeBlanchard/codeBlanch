@@ -1,6 +1,7 @@
 PODS:
   - Bolts/Tasks (1.9.1)
   - Cosmos (23.0.0)
+  - Kingfisher (7.2.1)
   - Parse (1.19.3):
     - Parse/Core (= 1.19.3)
   - Parse/Core (1.19.3):
@@ -9,6 +10,7 @@ PODS:
 
 DEPENDENCIES:
   - Cosmos
+  - Kingfisher
   - Parse
   - TinyConstraints
 
@@ -16,15 +18,17 @@ SPEC REPOS:
   trunk:
     - Bolts
     - Cosmos
+    - Kingfisher
     - Parse
     - TinyConstraints
 
 SPEC CHECKSUMS:
   Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
   Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  Kingfisher: 7c084bebf7d548c623ad41bcf765fb200efed369
   Parse: 0abb63a0ff6fa34a3f64b81d595a294e2ece143a
   TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
 
-PODFILE CHECKSUM: a86397ba51f054376c87db0d0499d7373e97c318
+PODFILE CHECKSUM: 9d05bf145f317c59c639a0a759baf174ba90429a
 
 COCOAPODS: 1.11.2

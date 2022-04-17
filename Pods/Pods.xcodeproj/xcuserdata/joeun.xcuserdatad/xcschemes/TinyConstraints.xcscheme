@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C9778AE8394BE451567650E0B239BA21"
-               BuildableName = "AlamofireImage.framework"
-               BlueprintName = "AlamofireImage"
+               BlueprintIdentifier = "45C4E325E7851DD54CC3AD44C7A71935"
+               BuildableName = "TinyConstraints.framework"
+               BlueprintName = "TinyConstraints"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
